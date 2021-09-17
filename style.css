@@ -9,7 +9,7 @@ body {
     flex-direction: column;
 }
 
-
+/* Header */
 .header {
     padding: 20px 25%;
     display: flex;
@@ -28,18 +28,16 @@ ul {
     font-size: 18px;
     color: #E5E7EB;
     display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
-
-li {
-    margin-right: 32px;
-}
-
+/* content */
 .main {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
-
+/* hero */
 .hero {
     padding: 20px 25%;
     display: flex;
@@ -48,7 +46,7 @@ li {
 
 .right-hero,
 .left-hero {
-    min-width: 450px;
+    width: 450px;
     min-height: 200px;
 }
 .right-hero {
@@ -57,6 +55,10 @@ li {
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+.left-hero {
+    padding-right: 40px;
 }
 
 .left-hero button{
@@ -68,6 +70,7 @@ button {
     padding: 3px 16px;
     border-radius: 8px;
     color: #E5E7EB;
+    border: none;
 }
 
 .hero,
@@ -87,6 +90,8 @@ button {
     font-size: 48px;
     color: #F9FAF8;
 }
+
+/* information */
 .information{
     padding: 16px;
     text-align: center;
@@ -112,16 +117,44 @@ button {
     border: 2px solid #3882F6;
     margin: 0 auto;
 }
-
+/* quote */
 .quote {
+    padding: 20px 25%;
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.quote-text {
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-person {
+    align-self: flex-end;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* call to action */
 .cta {
-    background-color: #3882F6;
 
+    border-radius: 8px;
+    margin: 32px 25%;
+    padding: 32px 50px;
+    color: #E5E7EB;
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8px;
 }
 
+.cta-button {
+    border: 2px solid #E5E7EB;
+}
+/* footer */
 .footer {
     color: #E5E7EB;
     padding: 20px;
